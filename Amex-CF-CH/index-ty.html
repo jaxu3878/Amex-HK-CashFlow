@@ -1,0 +1,616 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/css/normalize.min.css">
+    <link rel="stylesheet" href="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/css/jquery-ui.css">
+    <link rel="stylesheet" href="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/css/main2.css">
+    <link rel="stylesheet" href="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/css/slick.css">
+    <link rel="stylesheet" href="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/css/form.css">
+    <script src="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style>
+    .hero-title {
+        top: 30% !important;
+    }
+    </style>
+</head>
+
+<body class="AXP_CenterContent AXP_Responsive">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="responsiveWrapper_main">
+        <div id="responsiveWrapper_sub">
+            <!--Created by CMAX:iCM 05-12-2015 03:14:35 File: HK_ch_NGN_HS_Business_Corp.html DO NOT MODIFY-->
+            <meta http-equiv="Content-Type" content="text/html; charset=Big5">
+            <link media="all" type="text/css" href="https://www.aexp-static.com/nav/ngn/css/inav_responsive_intl.css" rel="stylesheet">
+            <link media="all" type="text/css" href="https://www.aexp-static.com/nav/ngn/css/btnSpriteStyles.css" rel="stylesheet">
+            <!--[if lt IE 7]><div id="iNavNGI_Header" class="ie6 hk-ch"><![endif]-->
+            <!--[if IE 7]><div id="iNavNGI_Header" class="ie7 hk-ch"><![endif]-->
+            <!--[if IE 8]><div id="iNavNGI_Header" class="ie8 hk-ch"><![endif]-->
+            <!--[if IE 9]><div id="iNavNGI_Header" class="ie9 hk-ch"><![endif]-->
+            <!--[if !IE]>-->
+            <div id="iNavNGI_Header" class="hk-ch">
+                <!--<![endif]-->
+                <script type="text/javascript" id="iNavFontChecker">
+                // <![CDATA[  if ((document.domain.indexOf('americanexpress') + document.domain.indexOf('aexp')) < 0) { document.getElementById('iNavNGI_Header').className += ' iNavDisableFont'; }                
+                if (NAV == null || typeof(NAV) == "undefined") {
+                    var NAV = new Object()
+                }
+                NAV.RWD = {
+                    body: document.getElementsByTagName('body')[0],
+                    head: document.getElementsByTagName('head')[0],
+                    rwdView: false,
+                    deviceBucket: "large",
+                    deviceWidth: null,
+                    roundedWidth: null,
+                    isIE10: false,
+                    init: function() {
+                        var b = /*@cc_on!@*/ false;
+                        var c = 0; /*@cc_on if(/^10/.test(@_jscript_version)){c=10}@*/ ;
+                        if (b == true) {
+                            if (c == 10) {
+                                NAV.RWD.body.className += ' ie10';
+                                NAV.RWD.isIE10 = true
+                            }
+                        }
+                        if (NAV.RWD.body.className.match(/AXP_Responsive/i)) {
+                            NAV.RWD.checkMetroMode();
+                            NAV.RWD.rwdView = true;
+                            NAV.RWD.deviceWidth = document.documentElement.clientWidth;
+                            NAV.RWD.roundedWidth = NAV.RWD.roundWidth(NAV.RWD.deviceWidth);
+                            NAV.RWD.setupClient(NAV.RWD.deviceWidth);
+                            window.onresize = function(a) {
+                                NAV.RWD.deviceWidth = document.documentElement.clientWidth;
+                                NAV.RWD.roundedWidth = NAV.RWD.roundWidth(NAV.RWD.deviceWidth);
+                                NAV.RWD.setupClient(NAV.RWD.deviceWidth)
+                            }
+                        }
+                    },
+                    deviceBucketer: function(a) {
+                        var b = "large";
+                        if (a < 831) {
+                            if (a < 661) {
+                                b = "small"
+                            } else {
+                                b = "medium"
+                            }
+                        } else {
+                            b = "large"
+                        }
+                        return b
+                    },
+                    roundWidth: function(a) {
+                        var b = 0;
+                        a % 100 > 50 ? b = 50 : 0;
+                        return Math.min(Math.floor(a / 100) * 100) + b
+                    },
+                    capitalize: function(a) {
+                        return a.charAt(0).toUpperCase() + a.slice(1).toLowerCase()
+                    },
+                    setupClient: function(a) {
+                        NAV.RWD.deviceBucket = NAV.RWD.deviceBucketer(a);
+                        var b = NAV.RWD.head.getElementsByTagName('link');
+                        if (b.length != 0) {
+                            for (j = 0; j < b.length; j++) {
+                                var c = b[j].getAttribute('data-device-bucket');
+                                if (c) {
+                                    if (c == NAV.RWD.deviceBucket) {
+                                        b[j].href = b[j].getAttribute('data-css-uri');
+                                        b[j].setAttribute('data-device-bucket', c + '-loaded')
+                                    }
+                                }
+                            }
+                        }
+                        NAV.RWD.deviceBucket = NAV.RWD.capitalize(NAV.RWD.deviceBucket);
+                        NAV.RWD.body.className = NAV.RWD.body.className.replace(/\bres_.*?\b/g, '');
+                        NAV.RWD.body.className += " res_" + NAV.RWD.deviceBucket;
+                        NAV.RWD.body.className += " res_" + NAV.RWD.roundedWidth
+                    },
+                    isPluginSupport: function() {
+                        var a = null;
+                        try {
+                            a = !!new ActiveXObject("htmlfile")
+                        } catch (e) {
+                            a = false
+                        }
+                        return a
+                    },
+                    checkMetroMode: function() {
+                        if (NAV.RWD.isIE10) {
+                            if (!isPluginSupport()) {
+                                if (document.documentElement.clientWidth > 660) {
+                                    var b = document.createElement("style");
+                                    b.setAttribute('type', 'text/css');
+                                    b.appendChild(document.createTextNode("@-ms-viewport { width: device-width; }"));
+                                    try {
+                                        NAV.RWD.head.insertBefore(b, NAV.RWD.head.childNodes[1])
+                                    } catch (e) {
+                                        NAV.RWD.head.appendChild(b)
+                                    }
+                                }
+                            }
+                        }
+
+                        function isPluginSupport() {
+                            var a = null;
+                            try {
+                                a = !!new ActiveXObject("htmlfile")
+                            } catch (e) {
+                                a = false
+                            }
+                            return a
+                        }
+                    }
+                };
+                NAV.RWD.init();
+                // ]]>
+                </script>
+                <div id="skip-to-content"><a title="Skip to main content" accesskey="2" tabindex="1" href="#c-main-content">Skip to main content</a></div>
+                <div id="iNMbWrap">
+                    <div id="iNMbCont">
+                        <div id="iNMenuIco">
+                            <input title="" id="iNOpBtn" value="開啟目錄" class="iNMb iNMenu" data-location="javascript://?inav=iNOpBtn" type="button">
+                        </div>
+                        <div id="iNAmexLogo">
+                            <a id="iNMblLogo" href="https://www.americanexpress.com/hk/ch/?page=pr?inav=iNMblLogo_hk_ch&inav=iNMblLogo&elqTrackId=8060808a74994f1f9791f73881893c52" title="美國運通" class="iNMb"><img src="https://www.aexp-static.com/nav/ngn/img/clear.gif" title="" alt=""></a>
+                        </div>
+                        <div id="iNLogIco">
+                            <input title="" id="iNLogBtn" value="Logout" class="iNMb iNLog" data-location="https://global.americanexpress.com/myca/intl/mobl/japa/logoff.do?Face=ch_HK&amp;inav=iNLogBtn_hk_ch" type="button">
+                        </div>
+                    </div>
+                </div>
+                <div id="iNavHdWrap"><span id="iNMenuStart" class="iNAcsTxt" tabindex="-1">Start of menu</span>
+                    <div id="ioaSearch"></div>
+                    <div id="iNCardSelector"></div>
+                    <div id="iNavHeaderCont">
+                        <div id="iNavLogo">
+                            <a id="" href="https://www.americanexpress.com/hk/ch/?page=pr&elqTrackId=7143d627a0484464945ae02c47fe95c4" title="" accesskey="0" class="iNDef"><img src="https://www.aexp-static.com/nav/ngn/img/logo_bluebox.gif" title="American Express Hong Kong" alt="American Express Logo - link to home" class="amexLogo"></a>
+                        </div>
+                        <div id="iNavHeaderContFloat">
+                            <div id="iNavT1Nav">
+                                <ul id="iNavTier1Nav">
+                                    <li><a id="iNav_MyAccount" title="" href="https://global.americanexpress.com/myca/intl/acctsumm/japa/accountSummary.do?request_type=&Face=ch_HK&Face=ch_HK&elqTrackId=82fb69cb2db94c129c132e1c47a9a6be" accesskey="1"><span class="iNavT1LtDoor"></span><span class="iNGblLnk"><span class="icon"></span><span class="iNavLinkLabel">我的賬戶</span></span><span class="iNavT1RtDoor"></span></a>
+                                        <div id="iNav_secPanel1" class="iNavT2NavCont iNav_MyAccount"><span class="iNavTabInfo">您正在瀏覽我的賬戶主項目</span>
+                                            <div class="iNavT2Nav">
+                                                <div class="iNavCols">
+                                                    <div class="iNavCategory"><a id="iNCatCardAcct" title="" href="#" class="iNCat">我的美國運通卡賬戶<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNNMb"><a id="hk_ch_menu_myacct_youracct" title="" href="https://global.americanexpress.com/myca/intl/acctsumm/japa/accountSummary.do?request_type=&Face=ch_HK&Face=ch_HK&inav=hk_ch_menu_myacct_youracct&elqTrackId=7f44ff8a1a9d4b33ba202c022671c902">您的賬戶</a></li>
+                                                        <li class="iNMb"><a id="hk_ch_menu_myacct_youracct_mob" title="" href="https://global.americanexpress.com/myca/intl/mobl/japa/dispatcher.do?Face=ch_HK&inav=hk_ch_menu_myacct_youracct_mob&elqTrackId=40147599deb24b62a974460d2b1d8c82">您的賬戶</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_myacct_regonline" title="" href="https://global.americanexpress.com/myca/ocareg/japa/action?request_type=un_Register&Face=ch_HK&inav=hk_ch_menu_myacct_regonline&elqTrackId=4bb1fa8a9dd44d16b5303d28939cec4a">登記美國運通網上服務</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_myacct_activate" title="" href="https://global.americanexpress.com/myca/ocareg/japa/action?request_type=un_Activation&Face=ch_HK&inav=hk_ch_menu_myacct_activate&elqTrackId=ec80c786ee304b99bf7d9830d55fa9f2">確認您的美國運通卡</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_myacct_benefits" title="" href="https://www.americanexpress.com/hk/ch/content/membership-benefits.html?inav=hk_ch_menu_myacct_benefits&elqTrackId=9574c1bd4c71436983dd398a01077b8e">會員權益</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_myacct_help" title="" href="https://www.americanexpress.com/hk/ch/content/need-help.html?inav=hk_ch_menu_myacct_help&elqTrackId=2614497c18144f9480ba1f0dd2e94e16">需要協助？</a></li>
+                                                        <li class="iNDef iNCnt"><a id="hk_ch_menu_myacct_centurion" title="" href="https://www298.americanexpress.com/centurion/secure/hk/zh/home.do?method=load&inav=hk_ch_menu_myacct_centurion&elqTrackId=45f34d21cb054a069ad635b098a447c1">Centurion 首頁</a></li>
+                                                        <li class="iNDef iNPlt"><a id="hk_ch_menu_myacct_platinum" title="" href="https://www298.americanexpress.com/platinum/secure/hk/zh/home.do?method=load&inav=hk_ch_menu_myacct_platinum&elqTrackId=05d68398ba10408a97565a6411286702">白金卡首頁</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="iNavCols iNavLast">
+                                                    <div class="iNavCategory"><a id="iNCatBusinessAccounts" title="" href="#" class="iNCat">美國運通商戶/企業賬戶<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_myacct_business_corp_atwork" title="" href="https://www140.americanexpress.com/ATWORK/en_HK/atwork.do?pageAction=initialize&inav=hk_ch_menu_myacct_business_corp_atwork&elqTrackId=09fa571cc8374fc58f12577b36d7a5b8">美國運通@Work</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_myacct_omslogin" title="" href="https://www309.americanexpress.com/oms/global/authreg_home.do?ssolang=en_HK&ssobrand=SEWOLINT&mkt=HKG&inav=hk_ch_menu_myacct_omslogin&elqTrackId=c4e8568dfea640c7a43c634ea09007bd">網上美國運通商戶賬戶</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a id="iNav_Cards" title="" href="https://www.americanexpress.com/hk/ch/content/compare-cards/?card=card1&card=card2&card=card3&card=card4&card=card5&card=card6&card=card7&card=card8&elqTrackId=57c54b221ded4064a169352b0e7d36a5"><span class="iNavT1LtDoor"></span><span class="iNGblLnk"><span class="icon"></span><span class="iNavLinkLabel">美國運通卡</span></span><span class="iNavT1RtDoor"></span></a>
+                                        <div id="iNav_secPanel2" class="iNavT2NavCont iNav_Cards"><span class="iNavTabInfo">您正在瀏覽美國運通卡主項目</span>
+                                            <div class="iNavT2Nav">
+                                                <div class="iNavCols">
+                                                    <div class="iNavCategory"><a id="iNCatPersonalCards" title="" href="#" class="iNCat">個人美國運通卡<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNNMb"><a id="hk_ch_menu_cards_pc_allcard" title="" href="https://www.americanexpress.com/hk/ch/content/all-cards?inav=hk_ch_menu_cards_pc_allcard&elqTrackId=7136b2a4d97a450c887a72eee34fbd89">所有美國運通卡</a></li>
+                                                        <li class="iNMb"><a id="hk_ch_menu_cards_pc_allcard_mob" title="" href="https://m.americanexpress.com/hk/ch/content/all-cards/?inav=hk_ch_menu_cards_pc_allcard_mob&elqTrackId=604b084447de4749a04b56b7b36890fc">所有美國運通卡</a></li>
+                                                        <li class="iNNMb"><a id="hk_ch_menu_cards_pc_compare" title="" href="https://www.americanexpress.com/hk/ch/content/compare-cards?inav=hk_ch_menu_cards_pc_compare&elqTrackId=de88bb30a1ac46dbad7fbed39a1d7be9">美國運通卡比較</a></li>
+                                                        <li class="iNMb"><a id="hk_ch_menu_cards_pc_compare_mob" title="" href="https://m.americanexpress.com/hk/ch/content/compare-cards/?inav=hk_ch_menu_cards_pc_compare_mob&elqTrackId=a71781d6644c46489737e127c42eebed">美國運通卡比較</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_cards_pc_creditcard" title="" href="https://www.americanexpress.com/hk/ch/content/all-cards/?bkgd=1&filter=credit&inav=hk_ch_menu_cards_pc_creditcard&elqTrackId=e3980a5e1c354192979f7de6d1526abb">信用卡</a></li>
+                                                        <li class="iNDef"><a id="hk_cn_cards_pc_newsupp" title="" href="https://www.americanexpress.com/hk/ch/content/cards/add-someone-to-your-account.html?inav=hk_cn_cards_pc_newsupp&elqTrackId=7dc5be8a71d248bf98f2fee767865bfe">申請美國運通附屬卡</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_cards_pc_refer " title="" href="https://www.americanexpress.com/hk/cn/emgm/default.cgi?inav=hk_ch_menu_cards_pc_refer%20&elqTrackId=e1e200bba64e4075a5e79c2efe0d95c1">推薦朋友</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="iNavCols iNavLast">
+                                                    <div class="iNavCategory"><a id="iNCatCorporateCardProgrammes" title="" href="#" class="iNCat">美國運通公司卡計劃<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_cards_corp_corpcrdsolu" title="" href="https://business.americanexpress.com/hk/zh/corporate-payment-solutions?inav=hk_ch_menu_cards_corp_corpcrdsolu&elqTrackId=a88e9ead6113451b8b6928b9f7b1776a">美國運通公司卡計劃</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a id="iNav_Travel" title="" href="https://www.americanexpress.com/hk/cn/personal/travel/travelerscheques/default.shtml?elqTrackId=bb9bcb58daa64211a9aac1b685779d24"><span class="iNavT1LtDoor"></span><span class="iNGblLnk"><span class="icon"></span><span class="iNavLinkLabel">旅行服務</span></span><span class="iNavT1RtDoor"></span></a>
+                                        <div id="iNav_secPanel3" class="iNavT2NavCont iNav_Travel"><span class="iNavTabInfo">您正在瀏覽保險服務主項目</span>
+                                            <div class="iNavT2Nav">
+                                                <div class="iNavCols">
+                                                    <div class="iNavCategory"><a id=" iNCatTravelMoney" title="" href="#" class="iNCat">旅行現金<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_travel_overview" title="" href="https://www.americanexpress.com/hk/cn/personal/travel/travelerscheques/default.shtml?inav=hk_ch_menu_travel_overview&elqTrackId=11d17b2fbf554f1aa56d8bb1f1771217">旅行支票</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="iNavCols iNavLast">
+                                                    <div class="iNavCategory"><a id=" iNCatTravelService" title="" href="#" class="iNCat">旅遊服務<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_travel_traveloffice" title="" href="https://www.amextravelresources.com/?elqTrackId=c3d20fdf86744ff3aa0dad7b0e4f3ee3#/travel-office&inav=hk_ch_menu_travel_traveloffice">旅遊服務處</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_travel_amt" title="" href="https://network.americanexpress.com/en/atm_locator/?ref=prop&elqTrackId=5f653d32de784bfd9eb3106ab638ec76">自動提款機</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_travel_traveltips" title="" href="https://www.americanexpress.com/hk/cn/personal/travel/travelerscheques/travelhelpers.shtml?inav=hk_ch_menu_travel_traveltips&elqTrackId=69d442d8148945619e58e27fd818d30a">旅遊貼士</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a id="iNav_Insurance" title="" href="https://insurance.americanexpress.com.hk/cn/?elqTrackId=1f11c4e60e3b410cb6ddc6b5f731c377"><span class="iNavT1LtDoor"></span><span class="iNGblLnk"><span class="icon"></span><span class="iNavLinkLabel">保險服務</span></span><span class="iNavT1RtDoor"></span></a>
+                                        <div id="iNav_secPanel4" class="iNavT2NavCont iNav_Insurance"><span class="iNavTabInfo">您正在瀏覽積分計劃主項目</span>
+                                            <div class="iNavT2Nav">
+                                                <div class="iNavCols">
+                                                    <div class="iNavCategory"><a id="iNCatTravel" title="" href="#" class="iNCat">旅遊保障服務<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_insurance_travel" title="" href="https://insurance.americanexpress.com.hk/cn/travel-insurance/?inav=hk_ch_menu_insurance_travel&elqTrackId=761ea9385d4b4049892477dab56639ea">旅遊保險主頁</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_insurance_comptravel" title="" href="https://insurance.americanexpress.com.hk/cn/travel-insurance/comprehensive-travel-insurance/?inav=hk_ch_menu_insurance_comptravel&elqTrackId=d7e48fb497cd4b61ab572e85d2fafee0">綜合旅遊保險</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_insurance_travelaccident" title="" href="https://insurance.americanexpress.com.hk/cn/travel-insurance/travel-accident-insurance/?inav=hk_ch_menu_insurance_travelaccident&elqTrackId=a3e7f6a24ed44d4790875bf60e15c371">旅遊意外保險</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="iNavCols">
+                                                    <div class="iNavCategory"><a id="iNCatOtherInsurance" title="" href="#" class="iNCat">其他保險服務<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_insurance_medical" title="" href="https://insurance.americanexpress.com.hk/cn/medical-insurance/?inav=hk_ch_insurance_medical&elqTrackId=3018b2508a6846838a663596e36033a8">醫療保險</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_insurance_home" title="" href="https://insurance.americanexpress.com.hk/cn/home-insurance/?inav=hk_ch_insurance_home&elqTrackId=1581431ca9ff4deebf63c8c2caad409b">家居保險</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_insurance_car" title="" href="https://insurance.americanexpress.com.hk/cn/motor-insurance/?inav=hk_ch_insurance_car&elqTrackId=e6eeb138d7e14f0b9f6a887520a48c8a">汽車保險</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_insurance_golf" title="" href="https://insurance.americanexpress.com.hk/cn/golfer-insurance/?inav=hk_ch_insurance_golf&elqTrackId=cf9faa46e94145e3b901daabf1df090d">高爾夫球保險</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="iNavCols iNavLast">
+                                                    <div class="iNavCategory"><a id="iNCatAllInsurance" title="" href="#" class="iNCat">所有保險服務<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_insurance_home" title="" href="https://insurance.americanexpress.com.hk/cn/?inav=hk_ch_menu_insurance_home&elqTrackId=7fb1ac68c7b541fd90ca8ecb6cbdb7b5">保險主頁</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a id="iNav_Rewards" title="" href="https://www.americanexpress.com/hk/ch/content/membership-benefits/program-information.html?elqTrackId=be8d7a96bba84e439c84e71f2b4a3eaa"><span class="iNavT1LtDoor"></span><span class="iNGblLnk"><span class="icon"></span><span class="iNavLinkLabel">積分計劃</span></span><span class="iNavT1RtDoor"></span></a>
+                                        <div id="iNav_secPanel5" class="iNavT2NavCont iNav_Rewards"><span class="iNavTabInfo">您正在瀏覽旅行服務主項目</span>
+                                            <div class="iNavT2Nav">
+                                                <div class="iNavCols">
+                                                    <div class="iNavCategory"><a id="iNCatMembershipRewards" title="" href="#" class="iNCat">美國運通積分計劃<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_rewards_mr_proginfo" title="" href="https://catalogue.membershiprewards.com.hk/aboutProgram.mtw?language=zh_hk&inav=hk_ch_menu_rewards_mr_proginfo&elqTrackId=001af55d61c9425b965ec6510203171d">計劃簡介</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_rewards_mr_offer" title="" href="https://catalogue.membershiprewards.com.hk/index.mtw?language=zh_hk&inav=hk_ch_menu_rewards_mr_offer&elqTrackId=ac01b31a34c443b79b88a989b0d6508d">禮品換領</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_rewards_mr_frequentflyer" title="" href="https://catalogue.membershiprewards.com.hk/l1Category.mtw?categoryName=hk_11_Travel_with_Points&newSearch=true&language=zh_hk&inav=hk_ch_menu_rewards_mr_frequentflyer&elqTrackId=a11210b880144f53be0cf5ec06d27ff9">外遊常客獎賞</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_rewards_mr_managept" title="" href="https://catalogue.membershiprewards.com.hk/aboutRedeeming.mtw?language=zh_hk&inav=hk_ch_menu_rewards_mr_managept&elqTrackId=16b4b00d20db4f72a557b428184ede8e">管理您的美國運通積分</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="iNavCols iNavLast">
+                                                    <div class="iNavCategory"><a id="iNCatOtherRewardsOffers" title="" href="#" class="iNCat">更多獎賞優惠<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_rewards_offers_selects" title="" href="https://offers.amexnetwork.com/ilp?campaignID=Cam-0000521&issuerName=hk_prop&lang=zh-hk&elqTrackId=6a8a6e28ce684dff96993c60ce886461#&inav=hk_ch_menu_rewards_offers_selects">美國運通優選禮待</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_rewards_offers_cmoffers" title="" href="https://www.americanexpress.com/hk/ch/content/membership-benefits/offers.html?inav=hk_ch_menu_rewards_offers_cmoffers&elqTrackId=71606441c3d8439f837e766f7f33dcd2">會員優惠</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_rewards_offers_cardaccept" title="" href="https://welcome.amexnetwork.com/hk/zh_hk?issuerName=hk_prop&inav=hk_ch_menu_rewards_offers_cardaccept&elqTrackId=016753d15d4e419fb6f9a736817ce681">歡迎美國運通的商戶</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_rewards_offers_refer" title="" href="https://www.americanexpress.com/hk/cn/emgm/default.cgi?inav=hk_ch_menu_rewards_offers_refer&elqTrackId=46e04512a710427a8d44461d49662852">推薦好友賺取獎賞</a></li>
+                                                        <li class="iNNMb"><a id="hk_cn_menu_why_american_express" title="" href="https://www.americanexpress.com/hk/ch/content/why-american-express?inav=hk_cn_menu_why_american_express&elqTrackId=f4891cbb63414a7b978c5664de42ae41">為何選擇美國運通?</a></li>
+                                                        <li class="iNMb"><a id="hk_ch_menu_why_american_express_mob" title="" href="https://m.americanexpress.com/hk/ch/content/why-american-express/?inav=hk_ch_menu_why_american_express_mob&elqTrackId=f1b6b463393940d293b2eef79e7c6765">為何選擇美國運通?</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="iNavTabActive"><a id="iNav_Business" title="" href="https://www.americanexpress.com/hk/ch/merchant/home/merchant_p.shtml?page=PR&elqTrackId=e60a4a06007c467fa36c58789e24327d"><span class="iNavT1LtDoor"></span><span class="iNGblLnk"><span class="icon"></span><span class="iNavLinkLabel">商務</span></span><span class="iNavT1RtDoor"></span></a>
+                                        <div id="iNav_secPanel6" class="iNavT2NavCont iNav_Business"><span class="iNavTabInfo">您正在瀏覽商務主項目</span>
+                                            <div class="iNavT2Nav">
+                                                <div class="iNavCols">
+                                                    <div class="iNavCategory"><a id="iNCatMerchants" title="" href="#" class="iNCat">商戶<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef iNPM"><a id="hk_ch_menu_business_merch_home_pr" title="" href="https://www.americanexpress.com/hk/ch/merchant/home/merchant_p.shtml?page=PR&inav=hk_ch_menu_business_merch_home_pr&elqTrackId=09ce37a8448e48be9e5296bee26b819f">商戶服務主頁</a></li>
+                                                        <li class="iNDef iNCM"><a id="hk_ch_menu_business_merch_home_cm" title="" href="https://www.americanexpress.com/hk/ch/merchant/home/merchant_c.shtml?inav=hk_ch_menu_business_merch_home_cm&elqTrackId=6249083e41a248a08b82ccb465fc2f6e">商戶服務主頁</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_business_merch_omslogin" title="" href="https://www209.americanexpress.com/merchant/dashboard/ch_HK/login?inav=hk_ch_menu_business_merch_omslogin&elqTrackId=2a96fc02c5d6478d8e1cf22f4320f2cd">網上商戶服務</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_business_merch_whyamex" title="" href="https://www.americanexpress.com/hk/ch/content/merchant/why-american-express.html?inav=hk_ch_menu_business_merch_whyamex&elqTrackId=2c673ab32cee4bfba283d57501813256">為何接受美國運通卡簽賬？</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_business_merch_contactsfaqs" title="" href="https://www.americanexpress.com/hk/ch/content/merchant/contact-us-and-faqs.html?inav=hk_ch_menu_business_merch_contactsfaqs&elqTrackId=f1220fc6e61f409da4ef89d8eb6981eb">聯絡我們及常見問題</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_business_merch_applynow" title="" href="https://www.americanexpress.com/hk/ch/content/merchant/apply-now-to-accept-the-card.html?inav=hk_ch_menu_business_merch_applynow&elqTrackId=b796c9fc7ab44a46a7300a66401e05e8">申請接受美國運通卡簽賬</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="iNavCols iNavLast">
+                                                    <div class="iNavCategory"><a id="iNCatCorporations" title="" href="#" class="iNCat">企業<span class="iNAcsTxt">打開/收回</span></a></div>
+                                                    <ul class="iNavTier2Nav">
+                                                        <li class="iNDef"><a id="hk_ch_menu_business_corp_home" title="" href="https://business.americanexpress.com/hk/zh?inav=hk_ch_menu_business_corp_home&elqTrackId=30f9d31cf30d48299fb8154252a13dc1">美國運通公司卡</a></li>
+                                                        <li class="iNDef"><a id="hk_ch_menu_business_corp_atwork" title="" href="https://www140.americanexpress.com/ATWORK/en_HK/atwork.do?pageAction=initialize&inav=hk_ch_menu_business_corp_atwork&elqTrackId=9b7e1d09108f4e149b823f42f72ffe17">美國運通@ Work</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="iNavUtilitySection">
+                            <div id="iNavUtilityArea">
+                                <div id="iNavUtilityLinks">
+                                    <ul>
+                                        <li class="iNavFirstItem"><span id="iNavUtilCountryFlag"></span><span id="iNavUtilCountryName">Hong Kong</span><a id="hk_ch_utility_choosecountry" title="" href="https://www.americanexpress.com/change-country/?inav=hk_ch_utility_choosecountry&elqTrackId=9ed475c1dcdb40fbaf391be2028729f3" class="iNavChangeCountry">(其他地區網站</a></li>
+                                        <li><a id="hk_ch_utility_lang" title="" href="https://www.americanexpress.com/hk/?inav=hk_ch_utility_lang&elqTrackId=4d448d2a1b65400abf55f24fea26cddb">English)</a></li>
+                                        <li><a id="hk_ch_utility_contact" title="" href="https://www.americanexpress.com/hk/ch/content/help/contact-us.html?inav=hk_ch_utility_contact&elqTrackId=cf4713d935f4485baa8a5f3c0f2611db">與我們聯絡</a></li>
+                                    </ul>
+                                </div>
+                                <div id="iNavLogin"><span class="iNavLoginLtDoor"></span><a id="hk_ch_utility_merch_login" title="" href="https://www209.americanexpress.com/oms/global/authreg_home.do?ssolang=ch_HK&ssobrand=SEWOLINT&mkt=HKG&inav=hk_ch_utility_merch_login&elqTrackId=72fbda5f8c9447998afdb9f7bed765d0" class="iNavLinkLogin">登入</a>
+                                    <noscript>&lt;a id="hk_ch_utility_merch_logout" title="&amp;#30331;&amp;#20986;" href="https://www.americanexpress.com/hk/ch/myaccount/logoff.shtml?inav=hk_ch_utility_merch_logout&elqTrackId=fa369170fc9c434bb7f26878a1d909b0" class="iNavLinkLogout"&gt;&amp;#30331;&amp;#20986;&lt;/a&gt;</noscript><span class="iNavLoginRtDoor"></span></div>
+                            </div>
+                        </div>
+                        <div id="iNMbUtilLinks">
+                            <ul>
+                                <li><a id="iNUtlContact" title="" href="https://www.americanexpress.com/hk/ch/content/help/contact-us.html?inav=iNUtlContact_hk_ch&elqTrackId=5022e896130a422ab7503c48c0e96762"><span class="iNIco"></span><span class="iNLbl">與我們聯絡</span></a></li>
+                                <li><a id="iNUtlLang" title="" href="https://www.americanexpress.com/hk/?inav=iNUtlLang_hk_ch&elqTrackId=e1b0ff2c173c436b9e35903b154bf2f9"><span class="iNIco"></span><span class="iNLbl">選擇語言(English)</span></a></li>
+                                <li><a id="iNUtlChCountry" title="" href="https://www.americanexpress.com/change-country/?inav=iNUtlChCountry_hk_ch&elqTrackId=25c398e30c3043c99ad852342e0333cd"><span class="iNIco"></span><span class="iNLbl">其他地區網站</span></a></li>
+                            </ul>
+                        </div><a id="iNMenuEnd" class="iNAcsTxt" title="" href="#">Close Menu</a></div>
+                </div>
+                <div class="iNavShadow"></div>
+                <div id="iNavSANav">
+                    <div id="iNavSANavCont"><span id="iNCurSec">公司卡</span><span id="iNSANBtn"><a href="#" id="iNSABtn" title="開啟以瀏覽更多連結"><img src="https://www.aexp-static.com/nav/ngn/img/clear.gif" title="" alt=""></a></span>
+                        <ul id="iNavSANavLvl3">
+                            <li class="iNDef iNHasSM"><a id="hk_ch_business_corp_corpcrd" title="" href="https://business.americanexpress.com/hk/zh/corporate-card-programmes?inav=hk_ch_business_corp_corpcrd&elqTrackId=897e9f9053204ae9bda4dfd28d776c12" class="iNavFirstElement">公司卡</a>
+                                <ul class="iNavSANavLvl4">
+                                    <li class="iNDef"><a id="hk_ch_business_corp_corpcrd_cardcompare" title="" href="https://business.americanexpress.com/hk/zh/compare-corporate-cards?inav=hk_ch_business_corp_corpcrd_cardcompare&elqTrackId=6c28fa57c940424e857fa3e71d008e2d">公司卡比較</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_corpcrd_greencorpcard" title="" href="https://business.americanexpress.com/hk/zh/corporate-card?inav=hk_ch_business_corp_corpcrd_greencorpcard&elqTrackId=b57324fc9a874b84bf76a63e07538dc0">美國運通公司卡</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_corpcrd_goldcorpcard" title="" href="https://business.americanexpress.com/hk/zh/corporate-gold-card?inav=hk_ch_business_corp_corpcrd_goldcorpcard&elqTrackId=1725180d216e414492e2d5cd4bc56e6b">美國運通公司金卡</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_corpcrd_cathpaccard" title="" href="https://business.americanexpress.com/hk/zh/cathay-pacific-corporate-card?inav=hk_ch_business_corp_corpcrd_cathpaccard&elqTrackId=69a1159212cb4129a51ea2390e973486">美國運通國泰航空公司卡</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_corpcrd_cathpacelitecard" title="" href="https://business.americanexpress.com/hk/zh/cathay-pacific-elite-corporate-card?inav=hk_ch_business_corp_corpcrd_cathpacelitecard&elqTrackId=2ea6c0db305a488a86c9d33848627880">美國運通國泰航空尊尚公司卡</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_corpcrd_faq" title="" href="https://business.americanexpress.com/hk/zh/corporate-card-frequently-asked-questions?inav=hk_ch_business_corp_corpcrd_faq&elqTrackId=f52deb80c8414b6db06d4b5aa80e543e">常見問題</a></li>
+                                </ul>
+                            </li>
+                            <li class="iNDef iNHasSM"><a id="hk_ch_business_corp_pursol" title="" href="https://business.americanexpress.com/hk/zh/purchasing-solutions?inav=hk_ch_business_corp_pursol&elqTrackId=e465853402764d1f8ce5363d5ca3ae97">採購方案</a>
+                                <ul class="iNavSANavLvl4">
+                                    <li class="iNDef"><a id="hk_ch_business_corp_pursol_pursolcard" title="" href="https://business.americanexpress.com/hk/zh/corporate-purchasing-card?inav=hk_ch_business_corp_pursol_pursolcard&elqTrackId=b194997144304883adaa883eb3fcaeed">美國運通採購卡</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_pursol_bustrvlact" title="" href="https://business.americanexpress.com/hk/zh/business-travel-account?inav=hk_ch_business_corp_pursol_bustrvlact&elqTrackId=5e5ffa3bc76f48449c73167841638487">商務差旅賬戶</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_pursol_meetcard" title="" href="https://business.americanexpress.com/hk/zh/corporate-meeting-card?inav=hk_ch_business_corp_pursol_meetcard&elqTrackId=bbbe77628dcc457a9b609d1329f0d6e4">美國運通會議卡</a></li>
+                                </ul>
+                            </li>
+                            <li class="iNDef"><a id="hk_ch_business_corp_busitrends" title="" href="https://business.americanexpress.com/hk/zh/business-trends-and-insights?inav=hk_ch_business_corp_busitrends&elqTrackId=43e15dce2a3f47c89cae233005ed3074">市場趨勢及睿見</a></li>
+                            <li class="iNDef iNHasSM"><a id="hk_ch_business_corp_amexbenefits" title="" href="https://business.americanexpress.com/hk/zh/american-express-benefits?inav=hk_ch_business_corp_amexbenefits&elqTrackId=cccfa569d50448039f3e8ff355be8fb4">美國運通優惠</a>
+                                <ul class="iNavSANavLvl4">
+                                    <li class="iNDef"><a id="hk_ch_business_corp_amexbenefits_servexp" title="" href="https://business.americanexpress.com/hk/zh/american-express-benefits/services-and-expertise?inav=hk_ch_business_corp_amexbenefits_servexp&elqTrackId=45785dc83ee94986baea7d33bbf087dc">服務及專業見解</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_amexbenefits_prodsolutions" title="" href="https://business.americanexpress.com/hk/zh/american-express-benefits/products-and-solutions?inav=hk_ch_business_corp_amexbenefits_prodsolutions&elqTrackId=247407a86dca4cf0b5bbe56867c30bbd">產品及方案</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_amexbenefits_rewardsav" title="" href="https://business.americanexpress.com/hk/zh/rewards-and-savings?inav=hk_ch_business_corp_amexbenefits_rewardsav&elqTrackId=cd76a138ac574222aa64ce0275da76e2">獎賞及節流</a></li>
+                                </ul>
+                            </li>
+                            <li class="iNDef iNHasSM"><a id="hk_ch_business_corp_custcentre" title="" href="https://business.americanexpress.com/hk/zh/customer-centre?inav=hk_ch_business_corp_custcentre&elqTrackId=1cd9e004d2de4fc4aa1db62881829f3d" class="iNavLastElement">客戶中心</a>
+                                <ul class="iNavSANavLvl4">
+                                    <li class="iNDef"><a id="hk_ch_business_corp_custcentre_forcardmem" title="" href="https://business.americanexpress.com/hk/zh/customer-centre/card-members?inav=hk_ch_business_corp_custcentre_forcardmem&elqTrackId=6a20a80284aa459198bc264900a8b72f">公司卡卡會員</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_custcentre_forprogdmin" title="" href="https://business.americanexpress.com/hk/zh/customer-centre/programme-administrators?inav=hk_ch_business_corp_custcentre_forprogdmin&elqTrackId=2e7304c57fde43a9af04c225e6051e70">公司卡管理人</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_custcentre_mobsol" title="" href="https://business.americanexpress.com/hk/zh/customer-centre/mobile-solutions?inav=hk_ch_business_corp_custcentre_mobsol&elqTrackId=a644881f012e44d29c4e953b515d0053">流動方案</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_custcentre_loyrewsav" title="" href="https://business.americanexpress.com/hk/zh/customer-centre/rewards-savings-benefits?inav=hk_ch_business_corp_custcentre_loyrewsav&elqTrackId=f83a93211c1d4625b1da1b71a87842d5">獎賞及節流</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_custcentre_cardaccept" title="" href="https://business.americanexpress.com/hk/zh/customer-centre/corporate-card-acceptance?inav=hk_ch_business_corp_custcentre_cardaccept&elqTrackId=4de0908cbb564dc5a46f612f13760eb8">美國運通卡網絡</a></li>
+                                    <li class="iNDef"><a id="hk_ch_business_corp_custcentre_contactus" title="" href="https://business.americanexpress.com/hk/zh/contact-us?inav=hk_ch_business_corp_custcentre_contactus&elqTrackId=2eec17f4a5614de29946458cacf23ce2">聯絡美國運通</a></li>
+                                </ul>
+                            </li>
+                            <li id="iNMore" class="iNHasSM"><a id="iNMoreLink" href="#" title=""><span class="iNLbl">更多</span><span class="iNIco"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="c-main-content"></div>
+            </div>
+            <script type="text/javascript" id="iNavConfigurator">
+            // <![CDATA[
+            var iNavConfig = [
+                ['true'],
+                ['e3', 'true', 'http://www.americanexpress.com/hk/ch/myaccount/logoff.shtml?inav=hk_ch_utility_merch_logout', "&#30331;&#20986;", "&#30331;&#20986;"]
+            ];
+            var s_TopNav = "HK|ch|NGN|HS|Business|Corp";
+            if (NAV.RWD.body.className.match(/AXP_HybridApp/i)) {
+                document.getElementById('iNMblLogo').onclick = function() {
+                    return false;
+                }
+            }
+            // ]]>
+            </script>
+            <!--End File: HK_ch_NGN_HS_Business_Corp.html-->
+            <div class="wrapper">
+                <!-- hero -->
+                <div id="hero">
+                    <div class="hero-title">企業現金流
+                        <br><span>由您掌控</span></div>
+                    <div class="hero-image"></div>
+                </div>
+                <!-- testimonial -->
+                <div id="testimonial">
+                    <h2 class="testimonial-title">感謝您對美國運通公司卡計劃的查詢</h2>
+                    <p class="testimonial-subtitle">感謝您有興趣採納美國運通公司卡方案。我們已收到您的網上查詢，並將於兩個工作天內與您聯絡。如欲了解更多公司卡方案詳情，請瀏覽我們<a style="color:#017dba" target="blank" href="https://business.americanexpress.com/hk/zh/">網頁</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var inavNGN = false;
+    var iNavNGN_Selected_Level3 = "";
+
+    // Ensures the iNav gets a selected state prior to AMEX's iNav JS firing
+    // This ensures that AMEX script can copy the selected navigation's title to the mobile-responsive
+    // version of the inav
+    // on Responsive iNav this "selected" dropdown is represented as <span id="iNCurSec"></span>
+    if (inavNGN) {
+        var anchorParent = document.getElementById(iNavNGN_Selected_Level3).parentNode;
+        anchorParent.className += ' iNavSecondaryActive';
+    }
+    </script>
+    <div id="footer">
+        <!--Created by CMAX:iCM 01-04-2016 23:32:51 File: HK_ch_NGN_F_Generic.html DO NOT MODIFY-->
+        <meta http-equiv="Content-Type" content="text/html; charset=Big5">
+        <noscript>
+            &lt;link media="all" type="text/css" href="https://www.aexp-static.com/nav/ngn/css/inav_responsive_intl.css" rel="stylesheet"&gt;
+        </noscript>
+        <!--[if lt IE 7]><div id="iNavNGI_FooterMain" class="ie ie6 hk-ch"><![endif]-->
+        <!--[if IE 7]><div id="iNavNGI_FooterMain" class="ie ie7 hk-ch"><![endif]-->
+        <!--[if IE 8]><div id="iNavNGI_FooterMain" class="ie ie8 hk-ch"><![endif]-->
+        <!--[if IE 9]><div id="iNavNGI_FooterMain" class="ie ie9 hk-ch"><![endif]-->
+        <!--[if IE 10]><div id="iNavNGI_FooterMain" class="ie ie10 hk-ch"><![endif]-->
+        <!--[if !IE]>-->
+        <div id="iNavNGI_FooterMain" class="hk-ch">
+            <!--<![endif]-->
+            <div id="iNavNGI_FooterWrap">
+                <div id="iNavNGI_FooterCont">
+                    <div id="iNMblFootUtil">
+                        <div id="iNMblUtilCont">
+                            <input title="" value="與我們聯絡" id="iNFootCntBtn" data-location="https://global.americanexpress.com/myca/intl/mobl/japa/static.do?Face=ch_HK&amp;page=un_helpURI&amp;inav=iNFootCntBtn_hk_ch" type="button">
+                            <input title="" value="登入" id="iNFootLgBtn" data-location="https://global.americanexpress.com/myca/intl/mobl/japa/login.do?Face=ch_HK&amp;inav=iNFootLgBtn_hk_ch" type="button">
+                        </div>
+                        <div id="iNMblSocial">
+                            <ul id="iNavSocial">
+                                <li class="iNMb iNSM iNavLast" id="gNFtSM1">
+                                    <a id="iNavIcoFaceBook" href="https://www.facebook.com/AmericanExpressHK?elqTrackId=4a223a3f4fed437290a6f97f6523725e" title="Facebook - 網頁將會以新視窗開啟" data-window="new" data-omn-click-fn="omn_rmaction" data-omn-click-args="US:Amex:Nav,click&gt;FaceBook,e" data-omn-once="Yes" class="iNWin iNOmn"><img src="https://www.aexp-static.com/nav/ngn/img/clear.gif" alt="Facebook - Link will open in a new window" title="Facebook - 網頁將會以新視窗開啟" class="iNavIcoFaceBook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="iNavNGI_Footer">
+                        <div class="iNavFootSep"></div>
+                        <div class="iNavCols">
+                            <div class="iNavContent"><span class="iNavFootHeader">美國運通卡及信用卡</span>
+                                <ul>
+                                    <li class="iNDef" id="gNFtLnk1_1"><a id="hk_ch_footer_card_pc" href="https://www.americanexpress.com/hk/ch/content/all-cards/?bkgd=1&inav=hk_ch_footer_card_pc&elqTrackId=dd0bd45046f24e0e9fb6e0d6eb9face2" title="">個人卡</a></li>
+                                    <li class="iNDef" id="gNFtLnk1_2"><a id="hk_ch_footer_card_sbs" href="http://www.americanexpress.com/hk/cn/smallbusiness/cards/benefits/default.shtml?inav=hk_ch_footer_card_sbs&elqTrackId=affeae193eb64e86837d3b509112ba64" title="">商務卡</a></li>
+                                    <li class="iNDef" id="gNFtLnk1_3"><a id="hk_ch_footer_card_corp" href="/hk/zh?inav=hk_ch_footer_card_corp" title="">公司卡</a></li>
+                                    <li class="iNDef iNavLast" id="gNFtLnk1_4"><a id="hk_ch_footer_card_creditcards" href="https://www.americanexpress.com/hk/ch/content/credit-cards/?filter=credit&inav=hk_ch_footer_card_creditcards&elqTrackId=3a66a1dd5d8a4b689908953ff9917c0d" title="">美國運通信用卡</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="iNavFootSep"></div>
+                        <div class="iNavCols">
+                            <div class="iNavContent"><span class="iNavFootHeader">更多產品及服務</span>
+                                <ul>
+                                    <li class="iNDef" id="gNFtLnk2_1"><a id="hk_ch_footer_mr_program" href="https://catalogue.membershiprewards.com.hk/index.mtw?language=zh_hk&inav=hk_ch_footer_mr_program&elqTrackId=eaf6c3b7ac80430dbc100e03184f5ea2" title="">美國運通積分計劃</a></li>
+                                    <li class="iNDef" id="gNFtLnk2_2"><a id="hk_ch_footer_insurance_program" href="https://insurance.americanexpress.com.hk/cn/?elqTrackId=8bf5250f6d74475496870532831be8b1" title="">保險服務</a></li>
+                                    <li class="iNDef" id="gNFtLnk2_3"><a id="hk_ch_footer_merchant_service" href="https://www.americanexpress.com/hk/ch/merchant/home/merchant_p.shtml?page=PR&inav=hk_ch_footer_merchant_service&elqTrackId=024754aa7fb340769bec98d946fc2ecd" title="">商戶服務</a></li>
+                                    <li class="iNDef iNavLast" id="gNFtLnk2_4"><a id="hk_ch_footer_accept_the_card" href="https://www.americanexpress.com/hk/ch/content/merchant/apply-now-to-accept-the-card.html?inav=hk_ch_footer_accept_the_card&elqTrackId=c1b51b763e7d4f40a914738168848237" title="">接受美國運通卡簽賬</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="iNavFootSep"></div>
+                        <div class="iNavCols">
+                            <div class="iNavContent"><span class="iNavFootHeader">重要連結</span>
+                                <ul>
+                                    <li class="iNDef" id="gNFtLnk3_1"><a id="hk_ch_footer_onlineservice" href="https://global.americanexpress.com/myca/intl/acctsumm/japa/accountSummary.do?request_type=&Face=ch_HK&Face=ch_HK&inav=hk_ch_footer_onlineservice&elqTrackId=f22d60e0974c4b0b8da29908cfacc063" title="">美國運通網上服務</a></li>
+                                    <li class="iNDef" id="gNFtLnk3_2"><a id="hk_ch_footer_lostcard" href="https://www.americanexpress.com/hk/ch/content/help/lost-or-stolen-card.html?inav=hk_ch_footer_lostcard&elqTrackId=f74c77f2788d4354ad9c8beb48282fa9" title="">遺失運通卡</a></li>
+                                    <li class="iNDef" id="gNFtLnk3_3"><a id="hk_ch_footer_faq" href="https://www.americanexpress.com/hk/ch/content/help/faqs.html?inav=hk_ch_footer_faq&elqTrackId=ef6642f7a78d4749868db9fe59a9b187" title="">常見問題</a></li>
+                                    <li class="iNDef iNavLast" id="gNFtLnk3_4"><a id="hk_ch_footer_access" href="https://www.americanexpress.com/hk/ch/content/accessibility.html?inav=hk_ch_footer_access&elqTrackId=c2378c8db90c48a6a8a23ce737461904" title="">緊密聯繫</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="iNavFootSep"></div>
+                        <div class="iNavCols">
+                            <div class="iNavContent"><span class="iNavFootHeader">公司資料</span>
+                                <ul>
+                                    <li class="iNDef" id="gNFtLnk4_1"><a id="hk_ch_footer_abtamex" href="http://about.americanexpress.com/default.aspx?inav=hk_ch_footer_abtamex&elqTrackId=20121ea92ddf4d1a8635421538e2e787" title="">關於美國運通</a></li>
+                                    <li class="iNDef" id="gNFtLnk4_2"><a id="hk_ch_footer_contactus" href="https://www.americanexpress.com/hk/ch/content/help/contact-us.html?inav=hk_ch_footer_contactus&elqTrackId=c3db3b5deb5a4cac888e2e0cc8407fce" title="">與我們聯絡</a></li>
+                                    <li class="iNDef" id="gNFtLnk4_3"><a id="hk_ch_footer_sitemap" href="https://www.americanexpress.com/hk/cn/sitemap_main.shtml?inav=hk_ch_footer_sitemap&elqTrackId=3b817d61e6ce44bc80f5a90bbb42fc20" title="">網頁地圖</a></li>
+                                    <li class="iNDef iNavLast" id="gNFtLnk4_4">
+                                        <a id="xyz" href="#&inav=xyz" title=""></a>
+                                    </li>
+                                    <li id="iNavSocialNetID" class="iNavSocialNet">
+                                        <a id="iNavIcoFaceBook" href="https://www.facebook.com/AmericanExpressHK?elqTrackId=8f2b13895070410cb3a7a0f87dc29982" title="Facebook - 網頁將會以新視窗開啟" data-window="new" data-omn-click-fn="omn_rmaction" data-omn-click-args="US:Amex:Nav,click&gt;FaceBook,e" data-omn-once="Yes" class="iNWin iNOmn"><img src="https://www.aexp-static.com/nav/ngn/img/clear.gif" alt="Facebook - Link will open in a new window" title="Facebook - 網頁將會以新視窗開啟" class="iNavIcoFaceBook"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="iNavFootSep"></div>
+                    </div>
+                    <div id="copyrightInfo">
+                        <ul>
+                            <li class="iNMb" id="gNFtCP1"><a id="hk_ch_footer_abtamex_mob" href="http://about.americanexpress.com/default.aspx?inav=hk_ch_footer_abtamex_mob&elqTrackId=aa9ac1116c504e9b926a80fc628ce02c" title="">關於美國運通</a></li>
+                            <li class="iNDef" id="gNFtCP2"><a id="hk_ch_footer_onlinecalculator" href="https://www.americanexpress.com/hk/ch/online-calculator/minimum-payment.html?inav=hk_ch_footer_onlinecalculator&elqTrackId=45e7fccf68a8429eb1ef605a37f92f6b" title="">網上計算器</a></li>
+                            <li class="iNDef" id="gNFtCP3"><a id="hk_ch_footer_noticenagree" href="https://www.americanexpress.com/hk/ch/content/cardmember-agreement-and-fees-and-charges.html?inav=hk_ch_footer_noticenagree&elqTrackId=ef2b4b4d3211480f990afc4e81f16d92" title="">重要通告及會員協議</a></li>
+                            <li class="iNDef" id="gNFtCP4"><a id="hk_ch_footer_rules" href="https://www.americanexpress.com/hk/ch/content/website-rules-and-regulations.html?inav=hk_ch_footer_rules&elqTrackId=94894c79ea7e486aba8e7843bcf97dac" title="">網站守則</a></li>
+                            <li class="iNDef" id="gNFtCP5"><a id="hk_ch_footer_trademark" href="https://www.americanexpress.com/hk/ch/content/trademarks-and-service-marks.html?inav=hk_ch_footer_trademark&elqTrackId=6cf37b17501949f2ae3fede5b9302ad5" title="">商標</a></li>
+                            <li class="iNDef" id="gNFtCP6"><a id="hk_ch_footer_personinfo" href="https://www.americanexpress.com/hk/ch/content/personal-information-collection-statement.html?inav=hk_ch_footer_personinfo&elqTrackId=0adf0b464b76449d8e1bd4b86f2b837d" title="">致客戶有關個人資料(私隱)條例(「條例」)通知書</a></li>
+                            <li class="iNDef" id="gNFtCP7"><a id="hk_ch_footer_privacy" href="https://www.americanexpress.com/hk/ch/content/internet-privacy-statement.html?inav=hk_ch_footer_privacy&elqTrackId=d796d936b2524b76baf641d76baaa6ee" title="">美國運通網絡私隱權聲明書</a></li>
+                            <li class="iNDef iNavLast" id="gNFtCP8"><a id="hk_ch_footer_code" href="https://www.americanexpress.com/hk/ch/content/code-of-practice-for-payment.html?inav=hk_ch_footer_code&elqTrackId=fde08460a04c49f9bcc1c68fdc09a714" title="">支付卡計劃營運機構實務守則</a></li>
+                        </ul>
+                        <p class="iNavCopy_Amex">版權 © 2016 美國運通國際股份有限公司保留一切權利。</p>
+                    </div>
+                </div>
+                <div id="iNavObjects"></div>
+                <div id="iNavScripts"></div>
+            </div>
+        </div>
+        <script id="iNCmnJS" src="https://www.aexp-static.com/nav/ngn/js/commonFunctionsResponsive_Intl.js" type="text/javascript"></script>
+        <!--End File: HK_ch_NGN_F_Generic.html-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="https://webform.xgate.com/web/include/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/slimScroll.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <!-- gsap -->
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/gsap/TweenLite.min.js"></script>
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/gsap/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/gsap/easing/EasePack.min.js"></script>
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/gsap/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/gsap/plugins/ScrollToPlugin.min.js"></script>
+    <!-- slider -->
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/slick.js"></script>
+    <!-- scrollMagic -->
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/ScrollMagic/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/ScrollMagic/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="https://web.mailer08.net/info/web/include/javascript/ScrollMagic/plugins/animation.gsap.min.js"></script>
+    <script src="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/js/plugins.js"></script>
+    <script src="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/js/main.js"></script>
+    <script src="https://mc-apps.com.au/amex/GCP/ManageYourCashFlow/js/select.js"></script>
+    <!-- GUP Function -->
+    <script>
+    function gup(name) {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(window.location.href);
+        if (results == null)
+            return "";
+        else
+            return results[1];
+    }
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-84675330-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- Yahoo tracker code -->
+    <script>
+    (function(w, d, t, r, u) {
+        var f, n, i;
+        w[u] = w[u] || [], f = function() {
+            var o = {
+                ti: "5510848"
+            };
+            o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+        }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function() {
+            var s = this.readyState;
+            s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+        }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+    })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+    <noscript><img src="//bat.bing.com/action/0?ti=5510848&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+</body>
+
+</html>
